@@ -510,3 +510,56 @@ body {
 }
 
 .transparent-chat-icon img { max-width: 220px; opacity: 0.4; }
+
+/* Employee Directory Styles (scoped with emp- prefix to avoid conflicts) */
+.emp-page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+.emp-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+.emp-title { margin-bottom: 20px; font-weight: 700; }
+
+.emp-controls { display: flex; gap: 12px; margin-bottom: 15px; }
+
+.emp-input, .emp-textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.emp-textarea { min-height: 90px; resize: vertical; }
+
+.emp-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1e88e5;
+  color: #fff;
+}
+.emp-button:hover { background: #1565c0; }
+.emp-secondary { background: #555; }
+.emp-secondary:hover { background: #000; }
+
+.emp-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.emp-table th, .emp-table td { border-bottom: 1px solid #ddd; padding: 8px; text-align: left; }
+
+.emp-actions { display: flex; gap: 6px; }
+.emp-action-btn { padding: 6px 8px; background: #555; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+.emp-action-btn:hover { background: #000; }
+
+.emp-modal { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; }
+.emp-modal.hidden { display: none; }
+.emp-modal-content { background: #fff; padding: 20px; border-radius: 8px; width: 400px; }
+.emp-form-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 10px; }
